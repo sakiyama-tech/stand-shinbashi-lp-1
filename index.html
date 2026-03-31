@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STAND HOTEL SHIMBASHI｜東新橋のデザイナーズアパートメントホテル</title>
+  <meta name="description" content="新橋・汐留エリアに誕生したスタイリッシュなアパートメントホテル。バルミューダのケトル、Google TV、スマートチェックイン。ビジネスにも観光にも。汐留駅徒歩3分・新橋駅徒歩4分。">
+  <meta name="keywords" content="STAND HOTEL, STAND HOTEL SHIMBASHI, 新橋 ホテル, 汐留 ホテル, 東新橋 ホテル, デザイナーズホテル, アパートメントホテル, 新橋 宿泊, 汐留 宿泊">
+  <meta property="og:title" content="STAND HOTEL SHIMBASHI｜東新橋のデザイナーズアパートメントホテル">
+  <meta property="og:description" content="新橋・汐留エリアに誕生したスタイリッシュなアパートメントホテル。バルミューダのケトル、Google TV、スマートチェックイン完備。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <!-- 公開確認中：検索エンジンへのインデックスを一時的に拒否 -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "STAND HOTEL Shimbashi",
+    "description": "新橋・汐留エリアに誕生したスタイリッシュなアパートメントホテル。ビジネスにも観光にも最適なロケーション。",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "東新橋2-3-1",
+      "addressLocality": "港区",
+      "addressRegion": "東京都",
+      "postalCode": "105-0021",
+      "addressCountry": "JP"
+    },
+    "checkinTime": "16:00",
+    "checkoutTime": "11:00",
+    "petsAllowed": false,
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "無料Wi-Fi", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "キッチン", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "洗濯機", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "エアコン", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "フィットネス", "value": true}
+    ],
+    "starRating": {"@type": "Rating", "ratingValue": "3"}
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0d0d0d;
+      --dark: #161616;
+      --mid: #2a2a2a;
+      --border: #2e2e2e;
+      --gold: #b89060;
+      --gold-light: #d4aa78;
+      --cream: #f5f0e8;
+      --text: #e8e4dc;
+      --text-muted: #888880;
+      --white: #fafaf8;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: var(--black);
+      color: var(--text);
+      font-weight: 300;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 3rem;
+      transition: background 0.4s, padding 0.4s;
+    }
+    nav.scrolled {
+      background: rgba(13,13,13,0.95);
+      backdrop-filter: blur(12px);
+      padding: 1rem 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 1.1rem;
+      letter-spacing: 0.25em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .nav-logo span {
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      display: block;
+      color: var(--gold);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-reserve {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      padding: 0.6rem 1.5rem;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    .nav-reserve:hover {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    /* ── HERO ── */
+    #hero {
+      height: 100vh;
+      min-height: 600px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      padding: 6rem 3rem;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/837373316.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13,13,13,0.9) 0%, rgba(13,13,13,0.3) 60%, transparent 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+    }
+    .hero-tag {
+      font-size: 0.65rem;
+      letter-spacing: 0.35em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .hero-tag::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+    }
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      line-height: 1.1;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+    .hero-sub {
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      line-height: 2;
+    }
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--gold);
+      color: var(--black);
+      text-decoration: none;
+      padding: 1rem 2.5rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+    .hero-cta:hover { background: var(--gold-light); }
+    .hero-cta::after {
+      content: '→';
+      font-size: 1rem;
+    }
+    .hero-scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      right: 3rem;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--text-muted);
+      font-size: 0.6rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+    .hero-scroll::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 60px;
+      background: linear-gradient(to bottom, var(--text-muted), transparent);
+      animation: scrollLine 2s ease-in-out infinite;
+    }
+    @keyframes scrollLine {
+      0%, 100% { transform: scaleY(1); opacity: 1; }
+      50% { transform: scaleY(0.5); opacity: 0.4; }
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 7rem 3rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+
+    .section-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 1px;
+      background: var(--gold);
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.3;
+      color: var(--white);
+      margin-bottom: 3rem;
+    }
+    .divider {
+      width: 1px;
+      height: 80px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      margin: 0 auto 4rem;
+    }
+
+    /* ── CONCEPT ── */
+    #concept {
+      background: var(--dark);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .concept-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+    .concept-text p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 2.2;
+      margin-bottom: 1.5rem;
+    }
+    .concept-text p strong {
+      color: var(--text);
+      font-weight: 400;
+    }
+    .concept-visual {
+      position: relative;
+      height: 480px;
+      background-image: url('images/826761025.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .concept-visual::before {
+      content: '東新橋 2-3-1';
+      position: absolute;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      background: var(--black);
+      padding: 1rem 1.5rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+    }
+    .concept-visual-label {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      background: rgba(13,13,13,0.7);
+      padding: 0.4rem 0.8rem;
+    }
+    .stats {
+      display: flex;
+      gap: 3rem;
+      margin-top: 3rem;
+      padding-top: 3rem;
+      border-top: 1px solid var(--border);
+    }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-top: 0.4rem;
+    }
+
+    /* ── ROOMS ── */
+    #rooms { background: var(--black); }
+    .rooms-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .room-card {
+      background: var(--dark);
+      border: 1px solid var(--border);
+      transition: border-color 0.3s, transform 0.3s;
+      cursor: default;
+    }
+    .room-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-4px);
+    }
+    .room-img {
+      height: 220px;
+      position: relative;
+      overflow: hidden;
+    }
+    .room-img-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.6s;
+    }
+    .room-card:hover .room-img-bg { transform: scale(1.04); }
+    .room-img-r1 {
+      background-image: url('images/837373314.jpg');
+    }
+    .room-img-r2 {
+      background-image: url('images/837831635.jpg');
+    }
+    .room-img-r3 {
+      background-image: url('images/837843222.jpg');
+    }
+    .room-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: var(--gold);
+      color: var(--black);
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+      padding: 0.3rem 0.8rem;
+      font-weight: 500;
+    }
+    .room-body { padding: 1.75rem; }
+    .room-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: var(--white);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+    .room-size {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .room-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
+    }
+    .room-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+    .room-tag {
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 0.3rem 0.7rem;
+    }
+
+    /* ── AMENITIES ── */
+    #amenities {
+      background: var(--dark);
+      border-top: 1px solid var(--border);
+    }
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border: 1px solid var(--border);
+    }
+    .amenity-item {
+      padding: 2rem 1.5rem;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.3s;
+    }
+    .amenity-item:hover { background: rgba(184,144,96,0.05); }
+    .amenity-item:nth-child(4n) { border-right: none; }
+    .amenity-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .amenity-name {
+      font-size: 0.75rem;
+      color: var(--text);
+      font-weight: 400;
+      margin-bottom: 0.35rem;
+    }
+    .amenity-desc {
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ── REVIEWS ── */
+    #reviews {
+      background: var(--black);
+      border-top: 1px solid var(--border);
+    }
+    .reviews-score {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    .score-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 5rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .score-detail { color: var(--text-muted); font-size: 0.8rem; }
+    .score-label { color: var(--white); font-size: 1rem; font-weight: 400; }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .review-card {
+      background: var(--dark);
+      border: 1px solid var(--border);
+      padding: 2rem;
+    }
+    .review-quote {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 2;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+    .review-quote::before { content: '「'; color: var(--gold); }
+    .review-quote::after { content: '」'; color: var(--gold); }
+    .review-author {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+    }
+    .review-cats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem 2rem;
+      margin-top: 3rem;
+      padding-top: 3rem;
+      border-top: 1px solid var(--border);
+    }
+    .review-cat {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+    }
+    .review-cat-name { color: var(--text-muted); }
+    .review-cat-score { color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; }
+
+    /* ── ACCESS ── */
+    #access {
+      background: var(--dark);
+      border-top: 1px solid var(--border);
+    }
+    .access-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .access-map {
+      width: 100%;
+      height: 380px;
+      border: 1px solid var(--border);
+      filter: grayscale(30%) invert(90%) hue-rotate(180deg);
+    }
+    .access-items { display: flex; flex-direction: column; gap: 2rem; }
+    .access-item {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .access-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .access-item-icon {
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .access-item-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+      margin-bottom: 0.3rem;
+    }
+    .access-item-text {
+      font-size: 0.85rem;
+      color: var(--text);
+    }
+    .access-item-sub {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+    .address-block {
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 2;
+    }
+    .address-block strong {
+      color: var(--text);
+      font-weight: 400;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── RESERVE CTA ── */
+    #reserve {
+      background: var(--black);
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+    #reserve .section-inner { max-width: 700px; }
+    .reserve-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+    }
+    .reserve-sub {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 3rem;
+      line-height: 2;
+    }
+    .reserve-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 1.2rem;
+      background: var(--gold);
+      color: var(--black);
+      text-decoration: none;
+      padding: 1.2rem 3rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.25em;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+    .reserve-btn:hover { background: var(--gold-light); gap: 1.8rem; }
+    .reserve-note {
+      margin-top: 1.5rem;
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+    }
+    .checkin-info {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 3rem;
+      padding-top: 3rem;
+      border-top: 1px solid var(--border);
+    }
+    .checkin-block { text-align: center; }
+    .checkin-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.25em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .checkin-time {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--white);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      border-top: 1px solid var(--border);
+      padding: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 1rem;
+      letter-spacing: 0.25em;
+      color: var(--white);
+    }
+    .footer-logo span {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+      display: block;
+      font-family: 'Noto Sans JP', sans-serif;
+      margin-top: 0.3rem;
+    }
+    .footer-copy {
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+    }
+
+    /* ── FADE IN ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── GALLERY GRID ── */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .gallery-item {
+      aspect-ratio: 4/3;
+      overflow: hidden;
+    }
+    .gallery-item img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+      transition: transform 0.6s;
+    }
+    .gallery-item:hover img { transform: scale(1.05); }
+
+    /* ── RESPONSIVE: tablet ── */
+    @media (max-width: 900px) {
+      nav { padding: 1.2rem 1.5rem; }
+      nav.scrolled { padding: 0.8rem 1.5rem; }
+      .nav-links { display: none; }
+      section { padding: 5rem 1.5rem; }
+      #hero { padding: 5rem 1.5rem 3rem; }
+      .hero-scroll { display: none; }
+      .concept-grid, .access-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .concept-visual { height: 300px; }
+      .rooms-grid { grid-template-columns: 1fr; }
+      .amenities-grid { grid-template-columns: repeat(2, 1fr); }
+      .amenity-item:nth-child(4n) { border-right: 1px solid var(--border); }
+      .amenity-item:nth-child(2n) { border-right: none; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .checkin-info { gap: 1.5rem; }
+      footer { flex-direction: column; text-align: center; padding: 2rem 1.5rem; }
+    }
+
+    /* ── RESPONSIVE: mobile ── */
+    @media (max-width: 600px) {
+      nav { padding: 1rem 1.25rem; }
+      nav.scrolled { padding: 0.75rem 1.25rem; }
+      .nav-reserve { padding: 0.5rem 1rem; font-size: 0.65rem; }
+
+      section { padding: 4rem 1.25rem; }
+      #hero { padding: 5rem 1.25rem 2.5rem; min-height: 100svh; }
+
+      .hero-tag { font-size: 0.6rem; margin-bottom: 1rem; }
+      .hero-title { font-size: clamp(2rem, 10vw, 3rem); margin-bottom: 1rem; }
+      .hero-sub { font-size: 0.78rem; margin-bottom: 2rem; }
+      .hero-cta { padding: 0.9rem 2rem; font-size: 0.72rem; }
+
+      .section-title { font-size: clamp(1.6rem, 7vw, 2.2rem); margin-bottom: 2rem; }
+
+      .concept-visual { height: 240px; }
+      .stats { flex-direction: row; flex-wrap: wrap; gap: 1.5rem; padding-top: 2rem; margin-top: 2rem; }
+      .stat-num { font-size: 2rem; }
+
+      .room-card { max-width: 100%; }
+      .room-img { height: 200px; }
+
+      .amenities-grid { grid-template-columns: 1fr 1fr; }
+      .amenity-item { padding: 1.25rem 1rem; }
+      .amenity-icon { font-size: 1.25rem; }
+
+      .score-num { font-size: 3.5rem; }
+      .reviews-score { margin-bottom: 2rem; }
+      .review-cats { grid-template-columns: 1fr; gap: 0.6rem; padding-top: 2rem; margin-top: 2rem; }
+
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-item { aspect-ratio: 1/1; }
+
+      .access-map { height: 260px; }
+      .access-items { gap: 1.5rem; }
+      .access-item { padding-bottom: 1.5rem; }
+
+      .checkin-info { flex-direction: row; flex-wrap: wrap; gap: 1rem 2rem; padding-top: 2rem; margin-top: 2rem; }
+      .checkin-time { font-size: 1.5rem; }
+
+      .reserve-btn { padding: 1rem 2rem; font-size: 0.72rem; width: 100%; justify-content: center; }
+
+      footer { padding: 1.75rem 1.25rem; gap: 1rem; }
+    }
+
+    @media (max-width: 380px) {
+      .amenities-grid { grid-template-columns: 1fr; }
+      .amenity-item:nth-child(2n) { border-right: 1px solid var(--border); }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item { aspect-ratio: 4/3; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">
+      STAND HOTEL
+      <span>SHIMBASHI</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#concept">コンセプト</a></li>
+      <li><a href="#rooms">お部屋</a></li>
+      <li><a href="#amenities">設備</a></li>
+      <li><a href="#access">アクセス</a></li>
+    </ul>
+    <a href="#reserve" class="nav-reserve">ご予約</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-tag">SHINBASHI · TOKYO</p>
+      <h1 class="hero-title">
+        都心の真ん中で、<br>
+        <em>自分らしく</em><br>
+        滞在する。
+      </h1>
+      <p class="hero-sub">
+        汐留駅 徒歩3分 · 新橋駅 徒歩4分<br>
+        ビジネスにも、旅にも。スタイリッシュなアパートメントホテル。
+      </p>
+      <a href="#reserve" class="hero-cta">空室を確認する</a>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <!-- CONCEPT -->
+  <section id="concept">
+    <div class="section-inner">
+      <div class="concept-grid">
+        <div class="concept-text fade-in">
+          <p class="section-label">Concept</p>
+          <h2 class="section-title">「ただ泊まる」を<br>超えていく。</h2>
+          <p>
+            STAND HOTEL SHIMBASHIは、<strong>東京・新橋エリアに誕生したデザイナーズアパートメントホテル</strong>です。
+            スタイリッシュなインテリアと、キッチン・洗濯機を完備した充実の設備で、
+            短期滞在から長期滞在まで、ストレスのない暮らしを提供します。
+          </p>
+          <p>
+            <strong>バルミューダのケトル</strong>、<strong>Google TV</strong>、セルフチェックインシステム——
+            細部へのこだわりが、あなたの滞在をワンランク上げる。
+            ビジネスパーソンにも、ファミリーにも、旅人にも。
+          </p>
+          <p>
+            エレベーターが客室に直結する、プライベート感の高い空間設計。
+            新橋駅が見える夜景も、このホテルだけの特権です。
+          </p>
+          <div class="stats">
+            <div>
+              <div class="stat-num">3</div>
+              <div class="stat-label">分 — 汐留駅</div>
+            </div>
+            <div>
+              <div class="stat-num">41</div>
+              <div class="stat-label">m² — 客室面積</div>
+            </div>
+            <div>
+              <div class="stat-num">6</div>
+              <div class="stat-label">名 — 最大定員</div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-in" style="transition-delay: 0.15s;">
+          <div class="concept-visual">
+            <span class="concept-visual-label">EXTERIOR / VIEW</span>
+            <!-- 実際の外観・夜景写真に差し替えてください -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS -->
+  <section id="rooms">
+    <div class="section-inner">
+      <div class="fade-in">
+        <p class="section-label">Rooms</p>
+        <h2 class="section-title">3タイプの客室</h2>
+      </div>
+      <div class="rooms-grid">
+
+        <div class="room-card fade-in">
+          <div class="room-img">
+            <div class="room-img-bg room-img-r1">
+              <!-- 実際の写真: background-image: url('images/room-5.jpg') -->
+            </div>
+            <span class="room-badge">最大 5 名</span>
+          </div>
+          <div class="room-body">
+            <div class="room-name">SHIMBASHI 5</div>
+            <div class="room-size">41 m²</div>
+            <p class="room-desc">
+              シングルベッド4台＋ソファベッドを備えた広々アパートメント。
+              ファミリーや仲間との旅に最適。
+              新橋の夜景を望む眺望付き。
+            </p>
+            <div class="room-features">
+              <span class="room-tag">シングル×4 + ソファベッド</span>
+              <span class="room-tag">キッチン完備</span>
+              <span class="room-tag">洗濯機</span>
+              <span class="room-tag">眺望あり</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card fade-in" style="transition-delay: 0.1s;">
+          <div class="room-img">
+            <div class="room-img-bg room-img-r2">
+              <!-- 実際の写真: background-image: url('images/room-bunk-biz.jpg') -->
+            </div>
+            <span class="room-badge">ビジネス向け</span>
+          </div>
+          <div class="room-body">
+            <div class="room-name">BUNK 6 For Biz</div>
+            <div class="room-size">43 m²</div>
+            <p class="room-desc">
+              二段ベッド2台（最大6名）のビジネス特化型。
+              出張チームでの利用や、長期滞在にも対応。
+              ワークスペース・デスク完備。
+            </p>
+            <div class="room-features">
+              <span class="room-tag">二段ベッド×2</span>
+              <span class="room-tag">ビジネス向け</span>
+              <span class="room-tag">キッチン完備</span>
+              <span class="room-tag">洗濯機</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card fade-in" style="transition-delay: 0.2s;">
+          <div class="room-img">
+            <div class="room-img-bg room-img-r3">
+              <!-- 実際の写真: background-image: url('images/room-bunk.jpg') -->
+            </div>
+            <span class="room-badge">最大 6 名</span>
+          </div>
+          <div class="room-body">
+            <div class="room-name">BUNK 6</div>
+            <div class="room-size">41 m²</div>
+            <p class="room-desc">
+              二段ベッド2台（最大6名）のグループ向けプラン。
+              ユニークな二段ベッドデザインが空間のアクセントに。
+              仲間との旅に。
+            </p>
+            <div class="room-features">
+              <span class="room-tag">二段ベッド×2</span>
+              <span class="room-tag">グループ向け</span>
+              <span class="room-tag">キッチン完備</span>
+              <span class="room-tag">洗濯機</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section id="amenities">
+    <div class="section-inner">
+      <div class="fade-in">
+        <p class="section-label">Amenities</p>
+        <h2 class="section-title">充実の設備・サービス</h2>
+      </div>
+      <div class="amenities-grid fade-in">
+        <div class="amenity-item">
+          <span class="amenity-icon">📶</span>
+          <div class="amenity-name">無料 Wi-Fi</div>
+          <div class="amenity-desc">全室・共用エリアで高速Wi-Fi完備</div>
+        </div>
+        <div class="amenity-item">
+          <span class="amenity-icon">🍳</span>
+          <div class="amenity-name">フルキッチン</div>
+          <div class="amenity-desc">冷蔵庫・電子レンジ・コンロ・キッチン用品一式</div>
+        </div>
+        <div class="amenity-item">
+          <span class="amenity-icon">🫧</span>
+          <div class="amenity-name">洗濯機</div>
+          <div class="amenity-desc">各部屋に静音洗濯機。夜間使用も安心</div>
+        </div>
+        <div class="amenity-item">
+          <span class="amenity-icon">📺</span>
+          <div class="amenity-name">Google TV</div>
+          <div class="amenity-desc">スマートTV。衛星チャンネル対応</div>
+        </div>
+        <div class="amenity-item">
+          <span class="amenity-icon">☕</span>
+          <div class="amenity-name">バルミューダ ケトル</div>
+          <div class="amenity-desc">デザイン家電へのこだわり</div>
+        </div>
+        <div class="amenity-item">
+          <span class="amenity-icon">📱</span>
+          <div class="amenity-name">スマートチェックイン</div>
+          <div class="amenity-desc">非接触チェックイン。スムーズなご入室</div>
+        </div>
+        <div class="amenity-item">
+          <span class="amenity-icon">🏋️</span>
+          <div class="amenity-name">フィットネス</div>
+          <div class="amenity-desc">館内フィットネス設備完備</div>
+        </div>
+        <div class="amenity-item">
+          <span class="amenity-icon">🔐</span>
+          <div class="amenity-name">24時間セキュリティ</div>
+          <div class="amenity-desc">監視カメラ・24時間フロント対応</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" style="padding: 0; background: var(--black);">
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/837833188.jpg" alt="ファミリーでの滞在イメージ" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="images/837857215.jpg" alt="客室からの眺め・電車ビュー" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="images/837835015.jpg" alt="ロビー" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="images/826759581.jpg" alt="キッチン・ダイニングエリア" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="images/837373315.jpg" alt="バスルーム・洗濯機" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="images/837373310.jpg" alt="フィットネス" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="section-inner">
+      <div class="fade-in">
+        <p class="section-label">Guest Reviews</p>
+        <h2 class="section-title">お客様の声</h2>
+        <div class="reviews-score">
+          <div class="score-num">7.8</div>
+          <div>
+            <div class="score-label">良い</div>
+            <div class="score-detail">Booking.com クチコミ</div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card fade-in">
+          <p class="review-quote">内装がオシャレなのはもちろん、清掃が完璧でとても気持ちよく滞在できました。バルミューダのケトルが置いてあるなど、細かいところまでスタイリッシュです。部屋からは新橋駅が見え、夜の景色は特に最高でした。</p>
+          <div class="review-author">沼部さん · 日本</div>
+        </div>
+        <div class="review-card fade-in" style="transition-delay: 0.1s;">
+          <p class="review-quote">ロビーが狭いながらも機能的でおしゃれでした。チェックインも事前登録でスムーズにできました。スタッフの方も近くにおり安心でした。部屋はベッドが特徴的で、インテリアもおしゃれ。</p>
+          <div class="review-author">Kenjiさん · 日本</div>
+        </div>
+        <div class="review-card fade-in" style="transition-delay: 0.2s;">
+          <p class="review-quote">内装がおしゃれ。スリッパがふかふか。Google TVが良かった。駅からも近くてとても過ごしやすかったです。</p>
+          <div class="review-author">Natsueさん · 日本</div>
+        </div>
+      </div>
+      <div class="review-cats fade-in">
+        <div class="review-cat"><span class="review-cat-name">スタッフ</span><span class="review-cat-score">9.0</span></div>
+        <div class="review-cat"><span class="review-cat-name">施設・設備</span><span class="review-cat-score">9.0</span></div>
+        <div class="review-cat"><span class="review-cat-name">清潔さ</span><span class="review-cat-score">10.0</span></div>
+        <div class="review-cat"><span class="review-cat-name">快適さ</span><span class="review-cat-score">8.0</span></div>
+        <div class="review-cat"><span class="review-cat-name">ロケーション</span><span class="review-cat-score">8.0</span></div>
+        <div class="review-cat"><span class="review-cat-name">お得感</span><span class="review-cat-score">7.5</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESS -->
+  <section id="access">
+    <div class="section-inner">
+      <div class="fade-in">
+        <p class="section-label">Access</p>
+        <h2 class="section-title">アクセス</h2>
+      </div>
+      <div class="access-grid">
+        <div class="fade-in">
+          <div class="access-items">
+            <div class="access-item">
+              <div class="access-item-icon">🚇</div>
+              <div>
+                <div class="access-item-label">都営大江戸線 / ゆりかもめ</div>
+                <div class="access-item-text">汐留駅 徒歩3分</div>
+              </div>
+            </div>
+            <div class="access-item">
+              <div class="access-item-icon">🚃</div>
+              <div>
+                <div class="access-item-label">JR / 東京メトロ / 都営浅草線</div>
+                <div class="access-item-text">新橋駅 徒歩4分</div>
+                <div class="access-item-sub">複数路線利用可能</div>
+              </div>
+            </div>
+            <div class="access-item">
+              <div class="access-item-icon">🏙️</div>
+              <div>
+                <div class="access-item-label">周辺エリア</div>
+                <div class="access-item-text">虎ノ門ヒルズ 徒歩10分</div>
+                <div class="access-item-sub">日比谷神社 徒歩2分 · コンビニ 徒歩3分</div>
+              </div>
+            </div>
+            <div class="access-item">
+              <div class="access-item-icon">✈️</div>
+              <div>
+                <div class="access-item-label">空港アクセス</div>
+                <div class="access-item-text">羽田空港 約27分</div>
+                <div class="access-item-sub">成田国際空港 約60分</div>
+              </div>
+            </div>
+          </div>
+          <div class="address-block fade-in">
+            <strong>〒105-0021 東京都港区東新橋2-3-1</strong>
+            STAND HOTEL SHIMBASHI
+          </div>
+        </div>
+        <div class="fade-in" style="transition-delay: 0.15s;">
+          <iframe
+            class="access-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8!2d139.7556!3d35.6642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd1e4f0001%3A0x0!2z5p2x5Lqs6YO95riv5Yy65p2x5paw5qmL2-13!5e0!3m2!1sja!2sjp!4v1234567890"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="STAND HOTEL SHIMBASHI アクセスマップ">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVE -->
+  <section id="reserve">
+    <div class="section-inner fade-in">
+      <div class="divider"></div>
+      <h2 class="reserve-title">
+        新橋で、<br>特別な滞在を。
+      </h2>
+      <p class="reserve-sub">
+        汐留駅から徒歩3分。東京のど真ん中で、<br>
+        ホテルの利便性とアパートメントの快適さを両立した空間へ。
+      </p>
+      <a href="https://www.booking.com/hotel/jp/stand-shimbashi.ja.html" class="reserve-btn" target="_blank" rel="noopener">
+        空室を確認・予約する
+      </a>
+      <p class="reserve-note">Booking.com にて予約受付中</p>
+      <div class="checkin-info">
+        <div class="checkin-block">
+          <div class="checkin-label">Check-in</div>
+          <div class="checkin-time">16:00〜</div>
+        </div>
+        <div class="checkin-block">
+          <div class="checkin-label">Check-out</div>
+          <div class="checkin-time">〜11:00</div>
+        </div>
+        <div class="checkin-block">
+          <div class="checkin-label">Wi-Fi</div>
+          <div class="checkin-time">無料</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      STAND HOTEL SHIMBASHI
+      <span>〒105-0021 東京都港区東新橋2-3-1</span>
+    </div>
+    <div class="footer-copy">© 2025 STAND HOTEL SHIMBASHI. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
